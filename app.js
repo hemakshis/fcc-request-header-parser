@@ -4,6 +4,9 @@ const path = require('path');
 // Init App
 var app = express();
 
+// Port Number
+const port = process.env.PORT || 8080;
+
 // Load View Engine
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug');
@@ -23,6 +26,6 @@ app.get('/', function(req, res){
 });
 
 // Start Server
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log('Server Started on port 3000...');
 });
