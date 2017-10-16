@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title FCC Request Header Parser Microservice
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    code(style='display:block;white-space:pre-wrap')
+      | {
+      | &nbsp;&nbsp;"ipaddress":&nbsp;&quot;#{result.ipaddress}&quot;
+      | &nbsp;&nbsp;"language":&nbsp;&quot;#{result.language}&quot;
+      | &nbsp;&nbsp;"software":&nbsp;&quot;#{result.software}&quot;
+      | }
+    .container
+      h1.text-center FCC API Basejump: Request Header Parser Microservice
+      .jumbotron
+        h3 User Stories:
+        blockquote
+          ul
+            | 1) I can get the IP address, language and operating system for my browser.
+    footer.text-center &copy; Copyright Hemakshi Sachdev, 2017
+    ul.text-center
+      li(style='display:inline-block;padding:1% 1.5% 1% 0%;')
+        a(href='https://github.com/hemakshis')
+          i.fa.fa-github
+      li(style='display:inline-block;padding:1% 1.5% 1% 0%;')
+        a(href='https://www.freecodecamp.org/hemakshis')
+          i.fa.fa-free-code-camp
+      li(style='display:inline-block;padding:1% 1.5% 1% 0%;')
+        a(href='https://www.linkedin.com/in/hemakshi-sachdev-b41353103/')
+          i.fa.fa-linkedin
