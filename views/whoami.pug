@@ -5,12 +5,6 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
   body
-    code(style='display:block;white-space:pre-wrap;')
-      | {
-      | &nbsp;&nbsp;"ipaddress":&nbsp;&quot;#{result.ipaddress}&quot;
-      | &nbsp;&nbsp;"language":&nbsp;&quot;#{result.language}&quot;
-      | &nbsp;&nbsp;"software":&nbsp;&quot;#{result.software}&quot;
-      | }
     .container
       h1.text-center FCC API Basejump: Request Header Parser Microservice
       .jumbotron
@@ -18,6 +12,10 @@ html
         blockquote
           ul
             | 1) I can get the IP address, language and operating system for my browser.
+        h3 Example Usage
+        code https://rhp-hemakshis.herokuapp.com/whoami
+        h3 Example Output
+        code {&quot;ipaddress&quot;: xyz.abc.pqr, &quot;language&quot;: &quot;en-IN&quot;, &quot;software&quot;: &quot;X11; Linux x86_64&quot;}
     footer.text-center &copy; Copyright Hemakshi Sachdev, 2017
     ul.text-center
       li(style='display:inline-block;padding:1% 1.5% 1% 0%;')

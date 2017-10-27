@@ -13,19 +13,14 @@ app.set('view engine', 'pug');
 
 // Home Route
 app.get('/', function(req, res){
-  var language = (req.headers['accept-language'].split(';')[0]).split(',');
-  var software = (req.headers['user-agent'].split('(')[1]).split(')');
-  var result = {
-    ipaddress: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-    language: language[0],
-    software: software[0]
-  };
-  res.render('whoami',{
-    result:result
-  });
+  res.render('whoami');
 });
 
+// Route Files
+let whoami = require('./routes/whoami');
+app.use('/whoami', whoami);
+
 // Start Server
-app.listen(port, function(){
+app.listen(3000, function(){
   console.log('Server Started on port 3000...');
 });
