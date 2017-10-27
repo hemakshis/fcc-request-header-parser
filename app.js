@@ -21,6 +21,6 @@ let whoami = require('./routes/whoami');
 app.use('/whoami', whoami);
 
 // Start Server
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log('Server Started on port 3000...');
 });
