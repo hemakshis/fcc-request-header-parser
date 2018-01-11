@@ -7,6 +7,15 @@ html
     title Request Header Parser Microservice
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css', integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb', crossorigin='anonymous')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    style.
+      footer ul li {
+        font-size: 24px;
+        display: inline-block;
+        padding-right: 3.5%;
+      }
+      .fa-code, .fa-heart {
+        -webkit-text-stroke: 1px;
+      }
   body
     .container
       h1.text-center FCC API Basejump: Request Header Parser Microservice
@@ -18,18 +27,19 @@ html
         h3 Example Usage
         code https://rhp-hemakshis.herokuapp.com/whoami
         h3 Example Output
-        code {&quot;ipaddress&quot;: xyz.abc.pqr, &quot;language&quot;: &quot;en-IN&quot;, &quot;software&quot;: &quot;X11; Linux x86_64&quot;}
+        code {"ipaddress": xyz.abc.pqr, "language": "en-IN", "software": "X11; Linux x86_64"}
     footer.text-center
-      i.fa.fa-code.text-dark
-      |  By Hemakshi Sachdev, 2017 with 
+      i.fa.fa-code.text-dark.fa-lg
+      |  with 
       i.fa.fa-heart.text-danger
+      |  By Hemakshi Sachdev, 2017
     ul.text-center
-      li(style='display:inline-block;padding:1% 1.5% 1% 0%;')
-        a(href='https://github.com/hemakshis')
+      li
+        a(href='https://github.com/hemakshis', title='GitHub')
           i.fa.fa-github
-      li(style='display:inline-block;padding:1% 1.5% 1% 0%;')
-        a(href='https://www.freecodecamp.org/hemakshis')
+      li
+        a(href='https://www.freecodecamp.org/hemakshis', title='FreeCodeCamp')
           i.fa.fa-free-code-camp
-      li(style='display:inline-block;padding:1% 1.5% 1% 0%;')
-        a(href='https://www.linkedin.com/in/hemakshis')
+      li
+        a(href='https://www.linkedin.com/in/hemakshis', title='LinkedIn')
           i.fa.fa-linkedin
